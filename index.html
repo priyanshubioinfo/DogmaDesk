@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        try {
+          localStorage.removeItem('dogmadesk_theme');
+          localStorage.removeItem('omicsvault_theme');
+          document.documentElement.classList.remove('dark');
+          document.documentElement.classList.add('light');
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/dogmadesk-mark.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DogmaDesk connects biological questions to trusted databases. Search 55+ resources, identify accession formats, and follow guided research workflows." />
+    <meta name="keywords" content="bioinformatics databases, GenBank, UniProt, KEGG, AlphaFold, PDB, Ensembl, ClinVar, ChEMBL, omics, genomics, proteomics, central dogma, bioinfo workstation" />
+    <meta property="og:title" content="DogmaDesk | From sequence to insight" />
+    <meta property="og:description" content="Find the right biological database for every question. Search trusted resources, identify accession formats, and follow guided research workflows." />
+    <meta name="theme-color" content="#F8F9FA" />
+    <title>DogmaDesk | From sequence to insight</title>
+    <!-- Fonts: Newsreader (Editorial Serif), Plus Jakarta Sans (UI Sans), JetBrains Mono (Bioinformatics Accessions) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="min-h-screen transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

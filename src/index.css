@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    /* Fresh Minimal & Toned-Up Palette */
+    --claude-bg: #F8F9FA;
+    --claude-surface: #FFFFFF;
+    --claude-surface-warm: #F1F5F9;
+    --claude-subtle: #F8FAFC;
+    --claude-border: #E2E8F0;
+    --claude-border-hover: #CBD5E1;
+    --claude-ink: #0F172A;
+    --claude-body: #334155;
+    --claude-muted: #64748B;
+    --claude-terracotta: #D95D29;
+    --claude-terracotta-hover: #C2541C;
+    --claude-terracotta-light: #FFF7ED;
+    --claude-terracotta-border: #FFEDD5;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    scrollbar-gutter: stable;
+    background-color: #F8F9FA;
+    background-image:
+      radial-gradient(ellipse 65% 35% at 50% 0%, rgba(217, 93, 41, 0.035) 0px, transparent 70%),
+      radial-gradient(ellipse 50% 30% at 85% 15%, rgba(37, 99, 235, 0.025) 0px, transparent 60%),
+      radial-gradient(ellipse 45% 25% at 15% 30%, rgba(5, 150, 105, 0.02) 0px, transparent 55%);
+    background-attachment: fixed;
+    color: #0F172A;
+    min-height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    line-height: 1.5;
+  }
+
+  ::selection {
+    background-color: rgba(217, 93, 41, 0.18);
+    color: #C2541C;
+  }
+}
+
+/* ════════════════════════════════════════════════════════
+   Claude Typography & Balancing
+   ════════════════════════════════════════════════════════ */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* ════════════════════════════════════════════════════════
+   Claude Modern Cards & Artifact Elevation
+   ════════════════════════════════════════════════════════ */
+.claude-card {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.claude-card:hover {
+  border-color: rgba(217, 93, 41, 0.45);
+  box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.07), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+  transform: translateY(-1.5px);
+}
+
+.claude-panel {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+}
+
+.glass-card {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(217, 93, 41, 0.45);
+  box-shadow: 0 8px 20px -3px rgba(15, 23, 42, 0.06), 0 3px 6px -1px rgba(15, 23, 42, 0.03);
+  transform: translateY(-2px);
+}
+
+/* ════════════════════════════════════════════════════════
+   Toned-Up Tier Accent Strips (Vibrant, High Clarity)
+   ════════════════════════════════════════════════════════ */
+.card-tier-primary     { border-top: 3px solid #2563EB; }
+.card-tier-secondary   { border-top: 3px solid #059669; }
+.card-tier-composite   { border-top: 3px solid #D95D29; }
+.card-tier-tertiary    { border-top: 3px solid #7C3AED; }
+.card-tier-specialized { border-top: 3px solid #E11D48; }
+
+.tier-strip-primary    { border-left: 3.5px solid #2563EB; }
+.tier-strip-secondary  { border-left: 3.5px solid #059669; }
+.tier-strip-composite  { border-left: 3.5px solid #D95D29; }
+.tier-strip-tertiary   { border-left: 3.5px solid #7C3AED; }
+.tier-strip-specialized{ border-left: 3.5px solid #E11D48; }
+
+/* ════════════════════════════════════════════════════════
+   Clean Minimal Scrollbar
+   ════════════════════════════════════════════════════════ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Hide scrollbar for Chrome, Safari, Edge, Opera, Firefox */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* ════════════════════════════════════════════════════════
+   Animations
+   ════════════════════════════════════════════════════════ */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes toastOut {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to   { opacity: 0; transform: translateY(8px) scale(0.98); }
+}
+
+.animate-fade-up      { animation: fadeSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-toast-in     { animation: toastIn  0.2s ease both; }
+.animate-toast-out    { animation: toastOut 0.2s ease both; }
+
+.card-enter {
+  animation: fadeSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Claude Editorial Wordmark Accent */
+.brand-gradient {
+  background: linear-gradient(135deg, #0F172A 0%, #D95D29 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use DogmaDesk, please cite this software. Cite a specific archived release when available."
+title: "DogmaDesk: From sequence to insight"
+type: software
+authors:
+  - family-names: Priyanshu
+version: 1.0.0
+license: MIT

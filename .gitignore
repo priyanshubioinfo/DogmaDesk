@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+backup_before_mobile/
+
+.env
+.env.*
+!.env.example
+
+*.log
+.DS_Store
