@@ -1,6 +1,6 @@
 {
   "name": "dogmadesk",
-  "description": "DogmaDesk – The Central Dogma Bioinfo Workstation & Biological Database Directory",
+  "description": "Free browser-based guide to 58 bioinformatics databases, accession IDs, research workflows, and learning resources.",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",

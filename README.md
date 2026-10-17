@@ -1,5 +1,9 @@
 # DogmaDesk 🧬
-> **The Central Dogma Bioinfo Workstation & Student Handbook**
+> **From sequence to insight.**
+
+**Use DogmaDesk now:** [dogmadesk.pages.dev](https://dogmadesk.pages.dev/)
+
+DogmaDesk is a free, browser-based guide to bioinformatics databases and identifiers. Explore a curated directory of 55+ biological resources, resolve accession IDs, follow research workflows, and learn with the built-in student handbook. No installation is needed to use the live site.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -21,7 +25,7 @@ New students and bench biologists often struggle with fundamental questions:
 - *Why does a SAM file use bitwise flags and 1-based coordinates while a BED file uses 0-based intervals?*
 - *What does an accession prefix like `NM_`, `NP_`, `ENST`, `rs`, or `1TUP` signify, and how can it be mapped to downstream clinical evidence?*
 
-**DogmaDesk** is an open-source, single-page Bioinfo Workstation that integrates **55+ canonical databases across 5 fundamental tiers**, an **automated accession pattern detective**, **multi-step research workflow blueprints**, and an interactive **6-module student curriculum handbook** grounded in the Central Dogma of Molecular Biology.
+**DogmaDesk** is an open-source, browser-based bioinformatics reference and learning tool. It brings together **58 curated databases across five tiers**, an **accession identifier resolver**, **guided research workflows**, and an interactive student handbook. The live site is hosted on Cloudflare Pages and runs directly in your browser; saved database stacks are kept in browser `localStorage`.
 
 ---
 
@@ -113,7 +117,11 @@ DogmaDesk is built to provide an app-like experience across all viewports:
 
 ---
 
-## 🚀 Getting Started
+## 🌐 Use DogmaDesk
+
+Open the live application at **[dogmadesk.pages.dev](https://dogmadesk.pages.dev/)**. Search and filter the database directory, inspect database details, resolve accession identifiers, and explore research workflows and learning resources. You do not need to install anything.
+
+## 💻 Run locally (optional)
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (version `18.0.0` or higher recommended)
@@ -136,7 +144,7 @@ DogmaDesk is built to provide an app-like experience across all viewports:
    ```bash
    npm run dev
    ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+   Open the local URL printed by Vite in your browser (typically [http://localhost:5173](http://localhost:5173)).
 
 4. **(Optional) Start the companion API server:**
    ```bash
@@ -198,7 +206,7 @@ dogmadesk/
 
 ## 📚 Academic Citation & Educational Use
 
-If you use **DogmaDesk** in coursework, teaching, or research, cite the version you used. The repository's [`CITATION.cff`](CITATION.cff) file provides the current software citation metadata. After a versioned release is archived with Zenodo, add its DOI here so citations can resolve to a permanent release.
+If you use **DogmaDesk** in coursework, teaching, or research, cite the version you used. The repository's [`CITATION.cff`](CITATION.cff) file provides the current software citation metadata. A Zenodo DOI can be added here after the release is archived.
 
 ---
 
