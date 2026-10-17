@@ -123,8 +123,8 @@ DogmaDesk is built to provide an app-like experience across all viewports:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/dogmadesk.git
-   cd dogmadesk
+   git clone https://github.com/priyanshubioinfo/DogmaDesk.git
+   cd DogmaDesk
    ```
 
 2. **Install dependencies:**
